@@ -5,26 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcarius Inc | Boutique S-Corp Strategy</title>
     <style>
-        :root { --gold: #c5a059; --dark: #121212; --white: #ffffff; --grey: #1e1e1e; }
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; color: var(--white); line-height: 1.6; background-color: var(--dark); text-align: center; }
-        header { padding: 80px 20px; }
+        /* Medley Think Palette Integration */
+        :root { 
+            --deep-navy: #133a4c; 
+            --soft-teal: #58a4ad;
+            --light-teal: #8bc2c7;
+            --brand-gold: #ffc241;
+            --accent-coral: #e06c64;
+            --paper-white: #f7f5f2;
+            --text-dark: #133a4c;
+        }
+
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; color: var(--text-dark); line-height: 1.6; background-color: var(--paper-white); text-align: center; }
+        
+        header { background: var(--deep-navy); color: var(--white); padding: 80px 20px; color: white; }
         .container { max-width: 800px; margin: auto; padding: 20px; }
-        h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 5px; font-weight: 700; }
-        .gold-text { color: var(--gold); }
-        .tagline { color: #888; font-size: 1.1rem; margin-bottom: 40px; }
-        .btn { background: var(--gold); color: white; padding: 18px 35px; text-decoration: none; display: inline-block; border-radius: 4px; font-weight: bold; transition: 0.3s; margin-bottom: 60px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
-        .btn:hover { background: #b48e47; transform: translateY(-2px); }
-        .section { margin-bottom: 60px; }
-        h2 { font-size: 1.8rem; margin-bottom: 20px; color: var(--white); }
-        p { color: #bbb; max-width: 600px; margin: 0 auto 20px auto; }
-        .first-timer-box { background: #ffffff; color: #121212; padding: 40px; border-radius: 8px; margin: 40px auto; max-width: 650px; text-align: center; }
-        .first-timer-box h3 { color: #2ecc71; margin-top: 0; font-size: 1.5rem; }
-        .first-timer-box p { color: #444; margin-bottom: 20px; }
-        .specialties { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-top: 80px; padding-top: 40px; border-top: 1px solid #333; }
-        .badge { width: 110px; height: auto; filter: grayscale(100%); opacity: 0.6; transition: 0.4s; }
-        .badge:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.05); }
-        footer { padding: 60px 40px; color: #555; font-size: 0.9rem; border-top: 1px solid #222; margin-top: 40px; }
-        .contact-link { color: var(--gold); text-decoration: none; font-weight: bold; }
+        
+        h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 5px; font-weight: 700; color: white; }
+        .gold-text { color: var(--brand-gold); }
+        .tagline { color: var(--light-teal); font-size: 1.1rem; margin-bottom: 40px; }
+        
+        .btn { background: var(--brand-gold); color: var(--deep-navy); padding: 18px 35px; text-decoration: none; display: inline-block; border-radius: 4px; font-weight: bold; transition: 0.3s; margin-bottom: 60px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .btn:hover { background: #eab032; transform: translateY(-2px); }
+
+        .section { margin-bottom: 60px; padding: 40px 0; }
+        h2 { font-size: 2rem; color: var(--deep-navy); margin-bottom: 20px; }
+        p { color: #555; max-width: 600px; margin: 0 auto 20px auto; }
+
+        .first-timer-box { background: white; border-top: 5px solid var(--accent-coral); padding: 40px; border-radius: 8px; margin: 40px auto; max-width: 650px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .first-timer-box h3 { color: var(--accent-coral); margin-top: 0; font-size: 1.5rem; }
+        
+        .specialties { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-top: 60px; padding-top: 40px; border-top: 1px solid #ddd; }
+        .badge { width: 110px; height: auto; filter: sepia(50%) saturate(50%); transition: 0.4s; }
+        .badge:hover { filter: none; transform: scale(1.05); }
+
+        footer { background: var(--deep-navy); padding: 60px 40px; color: #8bc2c7; font-size: 0.9rem; margin-top: 40px; }
+        .contact-link { color: var(--brand-gold); text-decoration: none; font-weight: bold; border-bottom: 2px solid var(--brand-gold); }
     </style>
 </head>
 <body>
@@ -38,13 +54,13 @@
     <div class="container">
         <div class="section">
             <h2>Entity Strategy & Tax Roadmap</h2>
-            <p>Is your business structure working as hard as you are? We specialize in high-impact tax engineering for firms and high-earning professionals. Stop overpaying self-employment tax and start building a legacy.</p>
+            <p>We specialize in high-impact tax engineering for firms and high-earning professionals. Stop overpaying self-employment tax and start building a legacy.</p>
         </div>
 
         <div class="first-timer-box">
             <h3>🌱 First-Time Filer?</h3>
-            <p>Filing your taxes for the first time? We offer <strong>Free Basic Guidance</strong> to help you navigate the process with confidence. No jargon. No judgment. Just the facts.</p>
-            <a href="mailto:ccortes@arcariusinc.com?subject=First-Time%20Filer%20Inquiry" class="contact-link" style="color:#c5a059; border-bottom: 1px solid #c5a059;">Email for Free Guidance</a>
+            <p>We offer <strong>Free Basic Guidance</strong> to help you navigate the process with confidence. No jargon. No judgment. Just the facts.</p>
+            <a href="mailto:ccortes@arcariusinc.com?subject=First-Time%20Filer%20Inquiry" class="contact-link">Email for Free Guidance</a>
         </div>
 
         <div class="specialties">
@@ -57,8 +73,8 @@
 
     <footer>
         <p><strong>Arcarius Inc</strong> | Boutique Tax Strategy</p>
-        <p>Questions? <a href="mailto:ccortes@arcariusinc.com" class="contact-link">ccortes@arcariusinc.com</a></p>
-        <p style="margin-top: 20px; font-size: 0.7rem; color: #333;">&copy; 2026 Arcarius Inc | Authorized IRS e-file Provider (Pending)</p>
+        <p>Questions? <a href="mailto:ccortes@arcariusinc.com" style="color: white; font-weight: bold;">ccortes@arcariusinc.com</a></p>
+        <p style="margin-top: 20px; font-size: 0.7rem; color: #58a4ad;">&copy; 2026 Arcarius Inc | Authorized IRS e-file Provider (Pending)</p>
     </footer>
 
 </body>
