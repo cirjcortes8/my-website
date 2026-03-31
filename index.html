@@ -7,28 +7,23 @@
     <style>
         :root { --gold: #c5a059; --dark: #121212; --white: #ffffff; --grey: #1e1e1e; }
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; color: var(--white); line-height: 1.6; background-color: var(--dark); text-align: center; }
-        header { padding: 100px 20px; }
+        header { padding: 80px 20px; }
         .container { max-width: 800px; margin: auto; padding: 20px; }
-        h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 5px; }
+        h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 5px; font-weight: 700; }
         .gold-text { color: var(--gold); }
         .tagline { color: #888; font-size: 1.1rem; margin-bottom: 40px; }
-        
-        .btn { background: var(--gold); color: white; padding: 18px 35px; text-decoration: none; display: inline-block; border-radius: 4px; font-weight: bold; transition: 0.3s; margin-bottom: 60px; }
+        .btn { background: var(--gold); color: white; padding: 18px 35px; text-decoration: none; display: inline-block; border-radius: 4px; font-weight: bold; transition: 0.3s; margin-bottom: 60px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
         .btn:hover { background: #b48e47; transform: translateY(-2px); }
-
         .section { margin-bottom: 60px; }
-        h2 { font-size: 1.8rem; margin-bottom: 20px; }
+        h2 { font-size: 1.8rem; margin-bottom: 20px; color: var(--white); }
         p { color: #bbb; max-width: 600px; margin: 0 auto 20px auto; }
-
-        .first-timer-box { background: #ffffff; color: #121212; padding: 40px; border-radius: 8px; margin: 40px auto; max-width: 650px; }
-        .first-timer-box h3 { color: #2ecc71; margin-top: 0; }
-        .first-timer-box p { color: #444; }
-        
-        .specialties { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 80px; padding-top: 40px; border-top: 1px solid #333; }
-        .badge { width: 110px; height: auto; filter: grayscale(100%); opacity: 0.7; transition: 0.3s; }
-        .badge:hover { filter: grayscale(0%); opacity: 1; }
-
-        footer { padding: 40px; color: #555; font-size: 0.8rem; }
+        .first-timer-box { background: #ffffff; color: #121212; padding: 40px; border-radius: 8px; margin: 40px auto; max-width: 650px; text-align: center; }
+        .first-timer-box h3 { color: #2ecc71; margin-top: 0; font-size: 1.5rem; }
+        .first-timer-box p { color: #444; margin-bottom: 20px; }
+        .specialties { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-top: 80px; padding-top: 40px; border-top: 1px solid #333; }
+        .badge { width: 110px; height: auto; filter: grayscale(100%); opacity: 0.6; transition: 0.4s; }
+        .badge:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.05); }
+        footer { padding: 60px 40px; color: #555; font-size: 0.9rem; border-top: 1px solid #222; margin-top: 40px; }
         .contact-link { color: var(--gold); text-decoration: none; font-weight: bold; }
     </style>
 </head>
@@ -36,19 +31,19 @@
 
     <header>
         <h1>ARCARIUS <span class="gold-text">INC</span></h1>
-        <p class="tagline">Boutique S-Corp Formation & Tax Compliance for Brooklyn Founders</p>
+        <p class="tagline">Boutique S-Corp Formation & Tax Compliance for Modern Founders</p>
         <a href="https://app.acuityscheduling.com/schedule.php?owner=35105267" class="btn" target="_blank">SECURE MY STRATEGY SESSION</a>
     </header>
 
     <div class="container">
         <div class="section">
-            <h2>2026 Entity Strategy & Tax Roadmap</h2>
-            <p>Is your business structure working as hard as you are? We specialize in high-impact tax engineering for firms earning $16k–$90k. Stop overpaying self-employment tax and start building a legacy.</p>
+            <h2>Entity Strategy & Tax Roadmap</h2>
+            <p>Is your business structure working as hard as you are? We specialize in high-impact tax engineering for firms and high-earning professionals. Stop overpaying self-employment tax and start building a legacy.</p>
         </div>
 
         <div class="first-timer-box">
             <h3>🌱 First-Time Filer?</h3>
-            <p>Filing your taxes for the first time? We offer <strong>Free Basic Guidance</strong> for the Brooklyn community. No jargon. No judgment. Just the facts.</p>
+            <p>Filing your taxes for the first time? We offer <strong>Free Basic Guidance</strong> to help you navigate the process with confidence. No jargon. No judgment. Just the facts.</p>
             <a href="mailto:ccortes@arcariusinc.com?subject=First-Time%20Filer%20Inquiry" class="contact-link" style="color:#c5a059; border-bottom: 1px solid #c5a059;">Email for Free Guidance</a>
         </div>
 
@@ -61,8 +56,9 @@
     </div>
 
     <footer>
-        <p><strong>Arcarius Inc</strong> | Brooklyn, New York</p>
+        <p><strong>Arcarius Inc</strong> | Boutique Tax Strategy</p>
         <p>Questions? <a href="mailto:ccortes@arcariusinc.com" class="contact-link">ccortes@arcariusinc.com</a></p>
+        <p style="margin-top: 20px; font-size: 0.7rem; color: #333;">&copy; 2026 Arcarius Inc | Authorized IRS e-file Provider (Pending)</p>
     </footer>
 
 </body>
