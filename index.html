@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arcarius Inc | Boutique S-Corp Strategy</title>
+    <title>Arcarius Inc | Boutique S-Corp & Tax Strategy</title>
     <style>
         :root { 
             --deep-navy: #133a4c; 
             --soft-teal: #58a4ad;
-            --brand-gold: #ffc241;
+            /* The New Platinum Gray */
+            --platinum-gray: #d1d5db; 
             --paper-white: #f7f5f2;
             --text-dark: #133a4c;
             --soft-sage: #e8f0e8; 
@@ -18,67 +19,56 @@
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; color: var(--text-dark); line-height: 1.6; background-color: var(--paper-white); text-align: center; }
         header { background: var(--deep-navy); padding: 80px 20px; color: white; }
         .container { max-width: 800px; margin: auto; padding: 20px; }
-        h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 5px; font-weight: 700; color: white; }
-        .gold-text { color: var(--brand-gold); }
-        .tagline { color: #8bc2c7; font-size: 1.1rem; margin-bottom: 40px; }
         
-        .btn { background: var(--brand-gold); color: var(--deep-navy); padding: 18px 35px; text-decoration: none; display: inline-block; border-radius: 4px; font-weight: bold; transition: 0.3s; margin-bottom: 60px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .btn:hover { background: #eab032; transform: translateY(-2px); }
+        h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 5px; font-weight: 700; color: var(--paper-white); }
+        .tagline { color: #8bc2c7; font-size: 1.1rem; margin-bottom: 40px; font-weight: 300; }
+        
+        /* The New Platinum Button */
+        .btn-platinum { 
+            background: var(--platinum-gray); 
+            color: var(--deep-navy); 
+            padding: 18px 35px; 
+            text-decoration: none; 
+            display: inline-block; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            transition: 0.3s; 
+            margin-bottom: 60px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn-platinum:hover { background: #e5e7eb; transform: translateY(-2px); }
 
         .section { margin-bottom: 60px; padding: 40px 0; }
         h2 { font-size: 2rem; color: var(--deep-navy); margin-bottom: 20px; }
         p { color: #555; max-width: 600px; margin: 0 auto 20px auto; }
 
-        <div class="section">
-            <h2>Our Services</h2>
-            <p>Direct, high-impact tax engineering for firms and high-earning professionals.</p>
-            
-            <div class="container">
-        <div class="section">
-            <h2>Expert Filing. Boutique Strategy.</h2>
-            <p>Direct, high-impact tax engineering for firms and high-earning professionals. We don't just file your past; we plan your future.</p>
-        </div>
-
-        <div class="first-timer-box">
-            <h3>🌱 Professional Tax Filing</h3>
-            <p style="font-size: 1.2rem; margin-bottom: 10px;">Services start at <strong>$200</strong> per filing.</p>
-            <p>Book a free 15-minute Roadmap session to get started. You’ll receive a <strong>$50 Consultation Credit</strong> to apply toward your professional filing.</p>
-            <br>
-            <a href="https://app.acuityscheduling.com/schedule.php?owner=35105267" class="btn" style="margin-bottom: 0; padding: 15px 35px; background-color: var(--forest-green); color: white; border-radius: 50px; letter-spacing: 1px;">BOOK MY FREE ROADMAP</a>
-        </div>
-
-        <div class="specialties">
-            <img src="business.png" alt="Business Tax" class="badge">
-            <img src="crypto.png" alt="Crypto Tax" class="badge">
-            <img src="equity.png" alt="Equity Comp" class="badge">
-            <img src="planning.png" alt="Tax Planning" class="badge">
-        </div>
-    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="first-timer-box">
-            <h3>🌱 First-Time Filer?</h3>
-            <p>Book a 15-minute Roadmap session to demystify your first filing. It’s free, and you’ll receive a <strong>$50 Consultation Credit</strong> to apply toward your professional filing.</p>
-            <a href="https://app.acuityscheduling.com/schedule.php?owner=35105267" class="btn" style="margin-bottom: 0; padding: 12px 25px; background-color: var(--forest-green); color: white;">BOOK MY FREE ROADMAP</a>
-        </div>
-
         .first-timer-box { 
             background: var(--soft-sage); 
             border-top: 5px solid var(--forest-green); 
             padding: 40px; 
-            border-radius: 8px; 
+            border-radius: 12px; 
             margin: 40px auto; 
             max-width: 650px; 
             box-shadow: 0 10px 30px rgba(0,0,0,0.03); 
         }
-        .first-timer-box h3 { color: var(--forest-green); margin-top: 0; font-size: 1.5rem; }
-        .contact-link { color: var(--forest-green); text-decoration: none; font-weight: bold; border-bottom: 2px solid var(--forest-green); padding-bottom: 2px; }
+        .first-timer-box h3 { color: var(--forest-green); margin-top: 0; font-size: 1.6rem; }
+        
+        .btn-green { 
+            background-color: var(--forest-green); 
+            color: white; 
+            padding: 15px 35px; 
+            text-decoration: none; 
+            display: inline-block; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            transition: 0.3s;
+        }
+        .btn-green:hover { background-color: #1e3d1a; transform: scale(1.02); }
 
         .specialties { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 60px; padding-top: 40px; border-top: 1px solid #ddd; }
-        .badge { width: 120px; height: auto; filter: grayscale(100%); opacity: 0.7; transition: 0.4s; }
-        .badge:hover { opacity: 1; transform: scale(1.05); }
+        .badge { width: 120px; height: auto; filter: grayscale(100%); opacity: 0.6; transition: 0.4s; }
 
         footer { background: var(--deep-navy); padding: 60px 40px; color: #8bc2c7; font-size: 0.9rem; margin-top: 40px; }
     </style>
@@ -86,39 +76,23 @@
 <body>
 
     <header>
-        <h1>ARCARIUS <span class="gold-text">INC</span></h1>
-        <p class="tagline">Boutique S-Corp Formation & Tax Compliance for Modern Founders</p>
-        <a href="https://app.acuityscheduling.com/schedule.php?owner=35105267" class="btn" target="_blank">SECURE MY STRATEGY SESSION</a>
+        <h1>ARCARIUS INC</h1>
+        <p class="tagline">Boutique S-Corp Strategy & Tax Compliance for Modern Founders</p>
+        <a href="https://app.acuityscheduling.com/schedule.php?owner=35105267" class="btn-platinum" target="_blank">SECURE MY STRATEGY SESSION</a>
     </header>
 
     <div class="container">
         <div class="section">
-            <h2>Our Services</h2>
-            <p>High-impact tax engineering for firms and high-earning professionals.</p>
-            
-            <div class="pricing-grid">
-                <div class="price-card">
-                    <h4>Standard 1040</h4>
-                    <div class="price">$150</div>
-                    <div class="price-sub">per filing</div>
-                </div>
-                <div class="price-card">
-                    <h4>Strategy & S-Corp</h4>
-                    <div class="price">$350+</div>
-                    <div class="price-sub">annual advisory</div>
-                </div>
-                <div class="price-card">
-                    <h4>Catch-Up Filing</h4>
-                    <div class="price">3 + 1 Free</div>
-                    <div class="price-sub">4-year reset bundle</div>
-                </div>
-            </div>
+            <h2>Expert Filing. Boutique Strategy.</h2>
+            <p>Direct, high-impact tax engineering for firms and high-earning professionals. We don't just file your past; we plan your future.</p>
         </div>
 
         <div class="first-timer-box">
-            <h3>🌱 First-Time Filer?</h3>
-            <p>We offer <strong>Free Basic Guidance</strong> to help you navigate the process with confidence. No jargon. No judgment. Just the facts.</p>
-            <a href="mailto:ccortes@arcariusinc.com?subject=First-Time%20Filer%20Inquiry" class="contact-link">Email for Free Guidance</a>
+            <h3>🌱 Professional Tax Filing</h3>
+            <p style="font-size: 1.25rem; margin-bottom: 10px; color: var(--deep-navy);">Services start at <strong>$200</strong> per filing.</p>
+            <p>Book a free 15-minute Roadmap session to get started. You’ll receive a <strong>$50 Consultation Credit</strong> to apply toward your professional filing.</p>
+            <br>
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=35105267" class="btn-green">BOOK MY FREE ROADMAP</a>
         </div>
 
         <div class="specialties">
