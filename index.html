@@ -9,7 +9,7 @@
             --deep-navy: #133a4c; 
             --soft-teal: #58a4ad;
             --brand-gold: #ffc241;
-            --paper-white: #f7f5f2; /* Your main background color */
+            --paper-white: #f7f5f2;
             --text-dark: #133a4c;
             --soft-sage: #e8f0e8; 
             --forest-green: #2d5a27; 
@@ -29,6 +29,13 @@
         h2 { font-size: 2rem; color: var(--deep-navy); margin-bottom: 20px; }
         p { color: #555; max-width: 600px; margin: 0 auto 20px auto; }
 
+        /* Pricing Table Styling */
+        .pricing-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 40px 0; }
+        .price-card { background: white; padding: 30px; border-radius: 8px; width: 220px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        .price-card h4 { margin-top: 0; color: var(--deep-navy); }
+        .price { font-size: 1.8rem; font-weight: bold; color: var(--forest-green); margin: 10px 0; }
+        .price-sub { font-size: 0.8rem; color: #888; }
+
         .first-timer-box { 
             background: var(--soft-sage); 
             border-top: 5px solid var(--forest-green); 
@@ -39,26 +46,10 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.03); 
         }
         .first-timer-box h3 { color: var(--forest-green); margin-top: 0; font-size: 1.5rem; }
-        
-        .contact-link { 
-            color: var(--forest-green); 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-bottom: 2px solid var(--forest-green);
-            padding-bottom: 2px;
-        }
+        .contact-link { color: var(--forest-green); text-decoration: none; font-weight: bold; border-bottom: 2px solid var(--forest-green); padding-bottom: 2px; }
 
-        /* The Seamless Badge Fix */
         .specialties { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 60px; padding-top: 40px; border-top: 1px solid #ddd; }
-        .badge { 
-            width: 120px; 
-            height: auto; 
-            object-fit: contain; 
-            /* We removed background-color and padding here */
-            filter: grayscale(100%) contrast(90%); 
-            opacity: 0.7; 
-            transition: 0.4s ease;
-        }
+        .badge { width: 120px; height: auto; filter: grayscale(100%); opacity: 0.7; transition: 0.4s; }
         .badge:hover { opacity: 1; transform: scale(1.05); }
 
         footer { background: var(--deep-navy); padding: 60px 40px; color: #8bc2c7; font-size: 0.9rem; margin-top: 40px; }
@@ -74,8 +65,26 @@
 
     <div class="container">
         <div class="section">
-            <h2>Entity Strategy & Tax Roadmap</h2>
-            <p>We specialize in high-impact tax engineering for firms and high-earning professionals. Stop overpaying self-employment tax and start building a legacy.</p>
+            <h2>Our Services</h2>
+            <p>High-impact tax engineering for firms and high-earning professionals.</p>
+            
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h4>Standard 1040</h4>
+                    <div class="price">$150</div>
+                    <div class="price-sub">per filing</div>
+                </div>
+                <div class="price-card">
+                    <h4>Strategy & S-Corp</h4>
+                    <div class="price">$350+</div>
+                    <div class="price-sub">annual advisory</div>
+                </div>
+                <div class="price-card">
+                    <h4>Catch-Up Filing</h4>
+                    <div class="price">3 + 1 Free</div>
+                    <div class="price-sub">4-year reset bundle</div>
+                </div>
+            </div>
         </div>
 
         <div class="first-timer-box">
